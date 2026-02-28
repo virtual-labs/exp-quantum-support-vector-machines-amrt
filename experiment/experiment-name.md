@@ -1,1 +1,1 @@
-## Experiment name
+## Quantum Support Vector Machines (QSVM)
