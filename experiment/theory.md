@@ -18,7 +18,7 @@ With the emergence of quantum computing, there is growing interest in leveraging
 
 Quantum Support Vector Machines (QSVMs) extend classical SVMs by using quantum feature mapping and quantum kernel estimation. Instead of manually designing kernels, QSVMs use quantum circuits to encode classical data into quantum states, enabling access to richer and potentially more expressive feature spaces.
 
-This experiment focuses on understanding how quantum feature maps and quantum kernel estimation can be used to improve classification performance, especially for datasets that are difficult to separate using classical approaches.
+.
 
 #### Quantum Support Vector Machines (QSVM)
 
