@@ -10,9 +10,15 @@
 
 #### Introduction
 
-Support Vector Machines (SVMs) are supervised learning algorithms used for classification and regression. The primary goal of an SVM is to find the optimal hyperplane that separates data points of different classes with the maximum margin.
+Support Vector Machines (SVMs) are supervised learning algorithms used for classification and regression. The primary goal of an SVM is to find an optimal hyperplane that separates data points of different classes with the maximum margin, ensuring better generalization on unseen data.
 
-In many real-world scenarios, data is not linearly separable in its original space. Classical SVMs use the "kernel trick" to map data into a higher-dimensional feature space where a separating hyperplane might exist. However, computing these kernels for large and complex datasets can be computationally expensive.
+In many real-world scenarios, datasets are not linearly separable in their original feature space. Classical SVMs address this limitation using the kernel trick, which implicitly maps data into a higher-dimensional feature space where a linear separation becomes possible. However, designing effective kernels and computing them for large or complex datasets can be computationally expensive.
+
+With the emergence of quantum computing, there is growing interest in leveraging quantum systems to enhance machine learning models. One key idea is that quantum computers naturally operate in high-dimensional Hilbert spaces, which can be exploited for feature representation.
+
+Quantum Support Vector Machines (QSVMs) extend classical SVMs by using quantum feature mapping and quantum kernel estimation. Instead of manually designing kernels, QSVMs use quantum circuits to encode classical data into quantum states, enabling access to richer and potentially more expressive feature spaces.
+
+
 
 #### Quantum Support Vector Machines (QSVM)
 
