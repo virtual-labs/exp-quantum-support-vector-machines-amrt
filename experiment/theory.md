@@ -1,3 +1,13 @@
+<script>
+  MathJax = {
+    tex: {
+      inlineMath: [['$', '$'], ['\\(', '\\)']]
+    }
+  };
+</script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
 #### Introduction
 
 Support Vector Machines (SVMs) are supervised learning algorithms used for classification and regression. The primary goal of an SVM is to find an optimal hyperplane that separates data points of different classes with the maximum margin, ensuring better generalization on unseen data.
@@ -16,17 +26,17 @@ Quantum Support Vector Machines (QSVMs) leverage quantum computing principles to
 
 #### Quantum Feature Mapping
 
-The most significant advantage of a QSVM is its utilization of _Quantum Feature Maps_. A quantum feature map φ(x) maps a classical data vector x to a quantum state |Φ(x)⟩. This mapping is performed using a parameterized quantum circuit known as a data encoding circuit.
+The most significant advantage of a QSVM is its utilization of _Quantum Feature Maps_. A quantum feature map $\phi(x)$ maps a classical data vector $x$ to a quantum state $|\Phi(x)\rangle$. This mapping is performed using a parameterized quantum circuit known as a data encoding circuit.
 
 By encoding data into quantum states, the quantum computer naturally operates in a Hilbert space whose dimension scales exponentially with the number of qubits.
 
 #### Quantum Kernel Estimation
 
-The quantum kernel is the inner product of the quantum states representing two data points, x_i and x_j:
+The quantum kernel is the inner product of the quantum states representing two data points, $x_i$ and $x_j$:
 
-K(x_i, x_j) = |⟨Φ(x_i)|Φ(x_j)⟩|²
+$$ K(x_i, x_j) = |\langle\Phi(x_i)|\Phi(x_j)\rangle|^2 $$
 
-A quantum computer can estimate this kernel by preparing the states |Φ(x_i)⟩ and |Φ(x_j)⟩, and then applying a specific quantum circuit (like a Swap Test or inversion circuit) followed by measurements. The classical SVM optimization problem then uses this quantum-evaluated kernel matrix to find the support vectors and the optimal hyperplane.
+A quantum computer can estimate this kernel by preparing the states $|\Phi(x_i)\rangle$ and $|\Phi(x_j)\rangle$, and then applying a specific quantum circuit (like a Swap Test or inversion circuit) followed by measurements. The classical SVM optimization problem then uses this quantum-evaluated kernel matrix to find the support vectors and the optimal hyperplane.
 
 #### How it works
 
