@@ -1,1 +1,1 @@
-### Aim of the experiment
+To perform binary classification using QSVM.
